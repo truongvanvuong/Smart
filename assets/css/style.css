@@ -4,7 +4,7 @@
 a {
   text-decoration: none;
 }
-body {
+body {overflow: hidden;
   overflow-y: overlay;
   margin: 0;
 }
@@ -132,7 +132,7 @@ html {
 }
 .app_title {
   margin: 0;
-  line-height: 3.2rem;
+  line-height: 3.4rem;
   font-weight: 500;
   font-size: 3.5rem;
 }
