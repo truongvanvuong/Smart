@@ -509,16 +509,16 @@ html {
 .contact_title {
   display: inline-block;
   color: #000000;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   line-height: 41px;
   margin: 72px 0 0 100px;
 }
 .contact_content {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 100px 0 100px;
+  margin: 0 100px 100px 100px;
 }
 .contact_descrption {
   color: rgba(18, 18, 54, 0.3);
@@ -541,7 +541,8 @@ html {
   width: 315px;
   height: 70px;
   border: 1px solid #e3e3e3;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   outline: none;
 }
 .contact_info > button {
@@ -560,13 +561,14 @@ html {
   background: #383d40;
 }
 .footer_body {
+  flex-wrap: wrap;
   padding-top: 54px;
   display: flex;
   margin: 0 auto;
   max-width: 1170px;
 }
 .Brand {
-  margin-right: 76px;
+  margin:0 76px 0 26px;
 }
 .Brand > h4 {
   font-weight: 700;
@@ -588,8 +590,8 @@ html {
   margin-right: 16px;
 }
 .footer_content {
-  margin-top: 16px;
-  display: flex;
+  margin: 16px 0 0 26px;
+  display:flex;
 }
 .footer_content_item {
   margin-right: 100px;

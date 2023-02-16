@@ -48,12 +48,12 @@ let currenindex = 0;
 nextBtn.onclick = function () {
 
  const itemCard= document.querySelector(".wrap_card_about");
- itemCard.scrollLeft += widthItem
+ itemCard.scrollLeft += widthItem*4
   currenindex++;
   if (currenindex > 0) {
     prevBtn.classList.remove("disbale");
   }
-  if (currenindex == lengthList ) {
+  if (currenindex == lengthList/4  ) {
     nextBtn.classList.add("disbale");
   }
   for (i = 0; i < dost.length; i++) {
@@ -62,7 +62,7 @@ nextBtn.onclick = function () {
     dost[currenindex].className += " active";
 };
 prevBtn.onclick = function () {
-  document.querySelector(".wrap_card_about").scrollLeft -= widthItem;
+  document.querySelector(".wrap_card_about").scrollLeft -= widthItem*4;
   currenindex--;
   if (currenindex <= 0) {
     prevBtn.classList.add("disbale");

@@ -145,9 +145,8 @@
   .Feedback_card_item {
     margin-top: 18px;
   }
-  .contact_content{
-    flex-direction: column;
-    align-items: flex-end;
+  .app_link_store > a > img:first-child {
+    margin: 0;
   }
   @keyframes fadeInMoblie {
     from {
@@ -209,12 +208,37 @@
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
-  .businesses_img > img{
-   min-width: 200px;
+  .businesses_img > img {
+    min-width: 200px;
     min-height: 260px;
-    object-fit: cover
-    
-  };
+    object-fit: cover;
+  }
+  .contact_descrption {
+    font-size: 1.2rem;
+  }
+  .contact_content {
+    margin: 0 60px 100px 60px;
+  }
+  .contact_info > input {
+    font-size: 1.2rem;
+    padding: 20px 10px;
+    width: 240px;
+    height: 50px;
+  }
+  .contact_info > button {
+    width: 100px;
+    height: 50px;
+  }
+  .contact_title {
+    font-size: 2.2rem;
+    margin-left: 60px;
+  }
+  .Feedback_card {
+    justify-content: center;
+  }
+  .Feedback_card_item {
+    margin-right: 30px;
+  }
 }
 /* Mobile*/
 @media (max-width: 739px) {
@@ -230,10 +254,12 @@
     margin: 0;
   }
   .app_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
   }
-  .client_app {
-  }
+
   .client_app_content {
     flex-direction: column;
   }
@@ -270,16 +296,49 @@
   .about_title {
     margin-bottom: 12px;
   }
-  .businesses_img{
+  .businesses_img {
     padding: 0 26px;
     flex-direction: column;
   }
-  .businesses_img > img:nth-child(2){
+  .businesses_img > img:nth-child(2) {
     margin: 16px 0;
   }
-.businesses_img > img{
-  min-width:160px;
-   min-height: 220px;
-   object-fit: cover 
- };
+  .businesses_img > img {
+    min-width: 160px;
+    min-height: 220px;
+    object-fit: cover;
+  }
+  .Feedback_card {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Feedback_card_item {
+    margin-right: 0;
+  }
+  .contact_content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact_info {
+    margin-top: 24px;
+  }
+  .contact_info > input {
+    padding: 20px 10px;
+    max-width: 220px;
+  }
+  .contact_info > button {
+    max-width: 100px;
+  }
+  .footer_content_item {
+    margin-right: 0;
+  }
+  .footer_info_item {
+    padding-left: 0;
+  }
+  .footer_body {
+    flex-direction: column;
+  }
+  .footer_content {
+    flex-direction: column;
+  }
 }
