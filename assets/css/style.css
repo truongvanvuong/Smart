@@ -561,7 +561,6 @@ html {
   background: #383d40;
 }
 .footer_body {
-  flex-wrap: wrap;
   padding-top: 54px;
   display: flex;
   margin: 0 auto;

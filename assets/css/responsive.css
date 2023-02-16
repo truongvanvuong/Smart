@@ -239,6 +239,9 @@
   .Feedback_card_item {
     margin-right: 30px;
   }
+  .footer_body {
+    flex-wrap: wrap;
+  }
 }
 /* Mobile*/
 @media (max-width: 739px) {
