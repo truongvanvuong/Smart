@@ -14,13 +14,13 @@
     display: none;
     position: fixed;
     animation: fadeIn linear 0.4s;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     animation: fadeInMoblie linear 0.3s;
   }
   .nav {
@@ -38,7 +38,7 @@
   .bars {
     display: block;
   }
-  .bars:hover{
+  .bars:hover {
     cursor: pointer;
   }
   .bars > i {
@@ -65,7 +65,7 @@
     font-weight: 500;
     font-size: 3rem;
   }
-  .nav_close:hover{
+  .nav_close:hover {
     cursor: pointer;
   }
   .nav_close > i {
@@ -80,23 +80,206 @@
   .nav_item:first-child {
     margin: 37px 0 5px 16px;
   }
-  .nav_item:last-child {
-  }
   .nav_item > a {
     color: #666666;
   }
-  @keyframes fadeInMoblie{
-    from{
+  .dots {
+    bottom: 20px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  .app_title {
+    text-align: center;
+    line-height: 3.2rem;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .app_link_store {
+    display: grid;
+    justify-content: center;
+  }
+  .app_link_store > a > img {
+    margin: 0;
+    width: 180px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .choose_title {
+    font-size: 2.8rem;
+  }
+  .choose_description {
+    font-size: 1.5rem;
+  }
+  .choose_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+  }
+  .choose_card_item {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 226px;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 15px;
+  }
+  .choose_card_item > span {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    color: #000000;
+  }
+  .choose_card {
+    justify-content: center;
+  }
+  .about_title {
+    font-size: 3rem;
+  }
+
+  .Feedback_card_item {
+    margin-top: 18px;
+  }
+  .contact_content{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  @keyframes fadeInMoblie {
+    from {
       opacity: 0.4;
     }
-    to{
+    to {
       opacity: 1;
     }
   }
 }
 /* table */
 @media (min-width: 740px) and (max-width: 1023px) {
+  .video {
+    max-width: 900px;
+    max-height: 450px;
+  }
+  .app_img {
+    max-width: 300px;
+  }
+  .app_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  .client_app_title {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 2.4rem;
+  }
+  .client_app_content > img {
+    max-width: 200px;
+    height: 400px;
+  }
+  .client_app_item {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .client_app_item_wrap > h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .client_app_item_wrap > p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    max-width: 361px;
+  }
+  .number {
+    line-height: 1.9rem;
+    width: 22px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .choose_card_item {
+    margin-top: 12px;
+    margin-right: 12px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .businesses_img > img{
+   min-width: 200px;
+    min-height: 260px;
+    object-fit: cover
+    
+  };
 }
 /* Mobile*/
 @media (max-width: 739px) {
+  .video {
+    max-width: 650px;
+    max-height: 350px;
+  }
+  .apps {
+    flex-direction: column;
+  }
+  .app_img {
+    max-width: 250px;
+    margin: 0;
+  }
+  .app_description {
+    margin-top: 40px;
+  }
+  .client_app {
+  }
+  .client_app_content {
+    flex-direction: column;
+  }
+  .client_app_title {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+  .client_app_content > img {
+    max-width: 250px;
+    height: 350px;
+  }
+  .client_app_detail {
+    margin-top: 40px;
+  }
+  .choose_card_item {
+    margin: 30px;
+  }
+  .choose_card_item {
+    margin-top: 12px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about_card_list {
+    margin-top: 16px;
+  }
+  .about_title {
+    margin-bottom: 12px;
+  }
+  .businesses_img{
+    padding: 0 26px;
+    flex-direction: column;
+  }
+  .businesses_img > img:nth-child(2){
+    margin: 16px 0;
+  }
+.businesses_img > img{
+  min-width:160px;
+   min-height: 220px;
+   object-fit: cover 
+ };
 }
