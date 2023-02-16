@@ -247,7 +247,7 @@
 @media (max-width: 739px) {
   .video {
     max-width: 650px;
-    max-height: 350px;
+    max-height: 300px;
   }
   .apps {
     flex-direction: column;
