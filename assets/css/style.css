@@ -5,7 +5,6 @@ a {
   text-decoration: none;
 }
 body {
-  overflow: hidden;
   overflow-y: overlay;
   margin: 0;
 }
