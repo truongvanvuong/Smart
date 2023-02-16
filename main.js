@@ -9,8 +9,7 @@ const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 const widthItem = document.querySelector(".about_card_item").offsetWidth;
 const lengthList = document.querySelectorAll(".about_card_item").length;
-const dost = document.querySelectorAll('.about_dot');
-
+const dost = document.querySelectorAll(".about_dot");
 
 barsBtn.onclick = function () {
   nav.style.opacity = "1";
@@ -44,25 +43,23 @@ function showSlides() {
 
 let currenindex = 0;
 
-
 nextBtn.onclick = function () {
-
- const itemCard= document.querySelector(".wrap_card_about");
- itemCard.scrollLeft += widthItem*4
+  const itemCard = document.querySelector(".wrap_card_about");
+  itemCard.scrollLeft += widthItem * 4;
   currenindex++;
   if (currenindex > 0) {
     prevBtn.classList.remove("disbale");
   }
-  if (currenindex == lengthList/4  ) {
+  if (currenindex == lengthList / 4) {
     nextBtn.classList.add("disbale");
   }
   for (i = 0; i < dost.length; i++) {
     dost[i].className = dost[i].className.replace("active", "");
   }
-    dost[currenindex].className += " active";
+  dost[currenindex].className += " active";
 };
 prevBtn.onclick = function () {
-  document.querySelector(".wrap_card_about").scrollLeft -= widthItem*4;
+  document.querySelector(".wrap_card_about").scrollLeft -= widthItem * 4;
   currenindex--;
   if (currenindex <= 0) {
     prevBtn.classList.add("disbale");
@@ -73,5 +70,5 @@ prevBtn.onclick = function () {
   for (i = 0; i < dost.length; i++) {
     dost[i].className = dost[i].className.replace("active", "");
   }
-    dost[currenindex].className += " active";
+  dost[currenindex].className += " active";
 };

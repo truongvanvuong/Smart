@@ -447,7 +447,7 @@ html {
 .businesses_img > img {
   border-radius: 8px;
 }
-.businesses_img > img:nth-child(2){
+.businesses_img > img:nth-child(2) {
   margin: 0 26px;
 }
 .Feedback_card {
@@ -568,7 +568,7 @@ html {
   max-width: 1170px;
 }
 .Brand {
-  margin:0 76px 0 26px;
+  margin: 0 76px 0 26px;
 }
 .Brand > h4 {
   font-weight: 700;
@@ -591,7 +591,7 @@ html {
 }
 .footer_content {
   margin: 16px 0 0 26px;
-  display:flex;
+  display: flex;
 }
 .footer_content_item {
   margin-right: 100px;

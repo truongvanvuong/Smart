@@ -316,18 +316,27 @@
     margin-right: 0;
   }
   .contact_content {
+    margin-right: 0;
+    margin-left: 60px;
     flex-direction: column;
     align-items: flex-start;
   }
   .contact_info {
     margin-top: 24px;
   }
+  .contact_title {
+    margin-left: 60px;
+    font-size: 2.2rem;
+  }
+  .contact_descrption {
+    margin: 0;
+  }
   .contact_info > input {
     padding: 20px 10px;
-    max-width: 220px;
+    max-width: 140px;
   }
   .contact_info > button {
-    max-width: 100px;
+    max-width: 80px;
   }
   .footer_content_item {
     margin-right: 0;
