@@ -309,7 +309,7 @@
     margin: 16px 0;
   }
   .businesses_img > img {
-    min-width: 160px;
+    min-width: 350px;
     min-height: 220px;
     object-fit: cover;
   }
