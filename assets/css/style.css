@@ -4,7 +4,8 @@
 a {
   text-decoration: none;
 }
-body {overflow: hidden;
+body {
+  overflow: hidden;
   overflow-y: overlay;
   margin: 0;
 }
@@ -23,6 +24,7 @@ html *::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0);
 }
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   line-height: 1.6rem;
   font-family: "IBM Plex Sans", sans-serif;
@@ -612,7 +614,7 @@ html {
   color: rgba(255, 255, 255, 0.9);
   padding: 12px 6px;
 }
-.footer_content_item:last-child{
+.footer_content_item:last-child {
   margin-right: 0;
 }
 .Copyright {
@@ -622,4 +624,21 @@ html {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 3rem;
+}
+.back_to_top {
+  z-index: 99;
+  position: fixed;
+  width: 46px;
+  height: 46px;
+  background-color: #277cfb;
+  bottom: 24px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.back_to_top > i {
+  line-height: 46px;
+  color: #ffffff;
+  font-size: 2.5rem;
 }

@@ -72,3 +72,23 @@ prevBtn.onclick = function () {
   }
   dost[currenindex].className += " active";
 };
+const toTop = document.querySelector(".back_to_top");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 150
+  ) {
+    toTop.style.display = "flex";
+  } else {
+    toTop.style.display = "none";
+  }
+}
+toTop.onclick = function() {
+  
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
